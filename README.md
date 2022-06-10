@@ -7,7 +7,7 @@ Requirements:
 - Install Python 3.9+
 - ------- Install Robot Framework 
 - ------- Install seleniumlibrary
- - ------ Install webdrivermanager
+- ------- Install webdrivermanager
 
 *Configure the chromedriver to be in PATH for best chrome web browser working
 
