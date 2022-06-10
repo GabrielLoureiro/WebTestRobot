@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220610 00:27:31.345" rpa="false" schemaversion="3">
+<suite id="s1" name="My Suite" source="c:\Users\Carin\Desktop\Robot Web\webTest\my_suite.robot">
+<test id="s1-t1" name="Search product on the web store" line="6">
+<kw name="I Access the Website Store" library="resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<arg>browser=${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220610 00:27:32.100" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20220610 00:27:32.096" endtime="20220610 00:27:36.779"/>
+</kw>
+<status status="PASS" starttime="20220610 00:27:32.094" endtime="20220610 00:27:36.781"/>
+</kw>
+<kw name="Digit the product &quot;pipoca&quot; on the search bar" library="resource" sourcename="Digit the product &quot;${PRODUCT}&quot; on the search bar">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=search_query_top</arg>
+<arg>${PRODUCT}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220610 00:27:36.786" level="INFO">Typing text 'pipoca' into text field 'id=search_query_top'.</msg>
+<status status="PASS" starttime="20220610 00:27:36.784" endtime="20220610 00:27:36.867"/>
+</kw>
+<status status="PASS" starttime="20220610 00:27:36.782" endtime="20220610 00:27:36.868"/>
+</kw>
+<kw name="Click the button search" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>name=submit_search</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220610 00:27:36.873" level="INFO">Clicking element 'name=submit_search'.</msg>
+<status status="PASS" starttime="20220610 00:27:36.871" endtime="20220610 00:27:37.953"/>
+</kw>
+<status status="PASS" starttime="20220610 00:27:36.870" endtime="20220610 00:27:37.954"/>
+</kw>
+<kw name="check if the product &quot;pipoca&quot; displayed corretly" library="resource" sourcename="check if the product &quot;${PRODUCT}&quot; displayed corretly">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${RESULT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220610 00:27:37.956" endtime="20220610 00:27:37.984"/>
+</kw>
+<status status="PASS" starttime="20220610 00:27:37.955" endtime="20220610 00:27:37.985"/>
+</kw>
+<kw name="Close the Browser" library="resource">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220610 00:27:37.988" endtime="20220610 00:27:40.136"/>
+</kw>
+<status status="PASS" starttime="20220610 00:27:37.986" endtime="20220610 00:27:40.137"/>
+</kw>
+<status status="PASS" starttime="20220610 00:27:32.089" endtime="20220610 00:27:40.139"/>
+</test>
+<doc>Suite Test Web Browser</doc>
+<status status="PASS" starttime="20220610 00:27:31.353" endtime="20220610 00:27:40.142"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="My Suite">My Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
