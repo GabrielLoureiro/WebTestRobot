@@ -21,3 +21,9 @@ Requirements:
     - [OPTIONAL] indent-rainbow
     - [OPTIONAL] Material Icon Theme
     - [OPTIONAL] Git Graph 
+
+Install/Run Steps:
+
+1) Clone the project https://github.com/GabrielLoureiro/WebTestRobot.git
+2) Run Tests with Task Runner
+3) Be Happy! :)
